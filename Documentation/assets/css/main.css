@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Exo:wght@400;600&display=swap');
+
+body {
+    font-family: 'Exo', sans-serif;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    background: var(--bg-color);
+}
+
+:root {
+    --base: #ecf5ff;
+    --primary-color: #1877F2;
+    --accent-color: #1877F2;
+    --white-color: #fff;
+    --bg-color: #f9f9f9;
+    --text-color: #666666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bree Serif', serif;
+}
+
+img {
+    width: 100%;
+}
+
+P {
+    color: var(--text-color);
+}
+
+.intro-title {
+    text-transform: capitalize;
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+#intro-des {
+    font-size: 19px;
+    text-transform: capitalize;
+    color: var(--accent-color);
+    transition: linear .3s;
+    position: relative;
+}
+
+#intro-des::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: linear .3s;
+}
+
+.section-title {
+    margin-bottom: 35px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.sidebar {
+    position: fixed;
+    border-right: 5px solid rgb(225 225 225 / 32%);
+    height: 100vh;
+    overflow: auto;
+}
+
+.navbar-brand {
+    max-width: 180px;
+    display: block;
+    margin: auto;
+    padding: 22px 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: var(--base);
+    color: var(--text-color);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: var(--primary-color);
+}
+
+.main-menu.nav.nav-pills {
+    flex-direction: column;
+}
+
+.main-menu .nav-item a span {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+nav#navbar-example2 {
+    display: block;
+}
+
+.main-menu li {
+    margin-bottom: 10px;
+}
+
+.main-menu li:hover {
+    background: var(--base);
+    border-radius: 5px;
+}
+
+.main-menu li:hover a {
+    color: var(--text-color);
+    transition: linear .3s;
+}
+
+.nav-item.hover_remove:hover {
+    background-color: transparent !important;
+}
+
+.hover_remove {
+    margin-bottom: 0 !important;
+}
+
+.nav-item.hover_remove li:last-child {
+    margin-bottom: 0;
+}
+
+.main-menu li a {
+    font-size: 15px;
+    color: var(--text-color)
+}
+
+.dropdown-menu {
+    position: relative;
+    background: transparent;
+    border: 0;
+    padding-left: 35px;
+}
+
+.main-menu ul:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 22px;
+    left: 33px;
+    border-left: 1px solid var(--primary-color);
+}
+
+.main-menu ul li {
+    position: relative;
+}
+
+.main-menu ul li:before {
+    content: "";
+    position: absolute;
+    top: 1em;
+    left: -1px;
+    width: 1em;
+    height: 1px;
+    border-top: 1px solid var(--primary-color);
+}
+
+.dropdown-item {
+    padding: .25rem 1.5rem;
+}
+
+.dropdown-menu li:hover {
+    background: transparent !important;
+}
+
+.dropdown-menu li:hover a {
+    color: var(--primary-color);
+}
+
+.wecome_area {
+    padding: 0;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.wecome_area::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    bottom: 0;
+    border-bottom: 1px solid #cdd6df4d;
+    height: 1px;
+    width: 100%;
+}
+
+.welcome-thumb img {
+    width: 100%;
+}
+
+.title-one {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.section {
+    padding-bottom: 50px;
+}
+
+.highlight-fe {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.highlight-fe:hover #intro-des::before {
+    width: 10px;
+}
+
+.highlight-fe:hover #intro-des {
+    padding-left: 15px;
+}
+
+.tech_list li {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.tech_list li:last-child {
+    margin-bottom: 0;
+}
+
+.pre_require {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.pre_require li {
+    margin-bottom: 20px;
+    width: 45%;
+    box-shadow: 0 7px 29px 0 rgba(var(--primary-color), .4);
+    background: var(--primary-color);
+    display: inline-block;
+    margin-right: 30px;
+    color: var(--white-color);
+    padding: 9px;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.g-setting {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.general_options {
+    text-transform: capitalize;
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    background-color: var(--primary-color);
+    margin-right: 2%;
+    padding: 10px;
+    color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.general_options p {
+    margin-bottom: 0;
+    color: var(--white-color);
+}
+
+.general_options.bg-none {
+    background: transparent;
+    box-shadow: none;
+    color: var(--text-color);
+}
+
+.g-title {
+    padding: 10px 0;
+}
+
+.s-title {
+    font-size: 18px;
+}
+
+.s-sub-title {
+    font-size: 16px;
+}
+
+.thank {
+    background-color: var(--white-color);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.t-title {
+    padding: 15px 0;
+}
+
+.nav-link {
+    padding: .5rem 10px;
+}
+
+/* mobile menu css  */
+.responsive_mobile_menu {
+    background: linear-gradient(145deg, var(--primary-color), var(--accent-color));
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.mobile_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 10px;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.mobile_info_open {
+    position: fixed;
+    height: 100vvh;
+    left: -300px;
+    top: 0;
+}
+
+.mobile_info_open.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--bg-color);
+    z-index: 9999;
+    height: 100vh;
+}
+
+.mobile_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    text-align: center;
+    color: var(--white-color);
+    background: var(--primary-color);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+
+.offcanvas-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+}
+
+.overlay-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo img {
+    display: block;
+    max-width: 70px;
+}
+
+.features.features-2::before {
+    display: none;
+}
+
+.fe-box.febox-2::before {
+    display: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: transparent;
+}

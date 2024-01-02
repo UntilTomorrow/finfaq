@@ -1,0 +1,63 @@
+{
+    "banner": {
+        "builder": true,
+        "no_selection":true,
+        "name": "Banner Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        }
+    },
+    "feature": {
+        "builder": true,
+        "name": "Feature Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        },
+        "element": {
+            "title": "text",
+            "description": "textarea",
+            "feature_icon": "icon",
+            "modal": true
+        }
+    },
+
+    "policy_pages": {
+        "builder": false,
+        "no_selection":true,
+        "name": "Policy Pages",
+        "element": {
+            "title": "text",
+            "policy_icon": "icon",
+            "details": "textarea-rich",
+            "modal": false
+        }
+    },
+    "social_icon": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Social Icons",
+        "element": {
+            "title": "text",
+            "social_icon": "icon",
+            "url": "text",
+            "modal": false
+        }
+    },
+    "contact_us": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Contact Us",
+        "content": {
+            "title": "text",
+            "short_details": "text",
+            "email_address": "text",
+            "contact_details": "text",
+            "contact_number": "text",
+            "latitude": "text",
+            "longitude": "text",
+            "website_footer": "textarea-rich"
+        }
+    }
+}
